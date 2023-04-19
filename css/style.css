@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.page{
+    width: 80%;
+    margin-inline: auto;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.record{
+    --moving:0px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.cover_img{
+    width: 700px;
+    position: absolute;
+    z-index: 1;
+}
+
+.vinyl_svg{
+    width: 680px;
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    margin-left: var(--moving);
+    transition: .60s;
+}
+
+.record:hover .vinyl_svg{
+--moving: 200px;
+}
+
+
